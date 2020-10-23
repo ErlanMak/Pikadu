@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pikadu - пост</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__head">
+				<a class="header__logo" href=""><img src="image/Pikadu.svg" alt="Логотип"></a>
+				<nav class="header__nav">
+					<ul class="header__ul">
+						<li class="header__li"><a href="#">Свежее</a></li>
+						<li class="header__li"><a href="#">Лучшее</a></li>
+						<li class="header__li"><a href="#">Горячее</a></li>
+						<li class="header__li"><a href="#">Подписки</a></li>
+					</ul>
+				</nav>
+				<form action="#" class="header__form">
+					<input type="search" class="header__search" placeholder="Поиск по сайту">
+					<button class="header__btn"></button>
+				</form>
+				<a href="#" class="header__sidebar" id="header__sidebar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<div class="contant container">
+		<div class="contant-main">
+
+			<form class="post-form" action="#" method="GET">
+				<input class="post-form__title" type="text" name="title" placeholder="Заголовок поста">
+				<textarea class="post-form__textarea" name="text" id="" placeholder="Текст вашего поста"></textarea>
+				<div class="post-form__buttons">
+					<a href="#" class="sidebar__btn sidebar__btn-post">
+						<svg class="icon icon-fire">
+							<use xlink:href="image/icon.svg#fire"></use>
+						</svg>
+						<span class="sidebar__post">Опубликовать пост</span>
+					</a>
+					<a href="#" class="sidebar__btn sidebar__btn-video">
+						<svg class="icon icon-video">
+							<use xlink:href="image/icon.svg#video"></use>
+						</svg>
+						<span class="sidebar__post1">Видео</span>
+					</a><a href="#" class="sidebar__btn sidebar__btn-photo">
+						<svg class="icon icon-photo">
+							<use xlink:href="image/icon.svg#photo"></use>
+						</svg>
+						<span class="sidebar__post1">Фото</span>
+					</a>
+				</div>
+
+			</form>
+
+		</div>
+
+		<aside class="sidebar">
+			<div class="user">
+				<img src="image/face.jpg" alt="" class="user__img">
+				<div class="user__name">islamovartem</div>
+				<div class="user__exit">
+					<svg class="icon icon-exit">
+						<use xlink:href="image/icon.svg#exit"></use>
+					</svg>
+				</div>
+			</div>
+			<nav class="sidebar__nav">
+				<ul class="sidebar__ul">
+					<li class="sidebar__li "><a href="#">Ответы</a></li>
+					<li class="sidebar__li"><a href="#">Комментарии</a></li>
+					<li class="sidebar__li sidebar__li-active"><a href="#">Оценки</a></li>
+					<li class="sidebar__li"><a href="#">Сохраненное</a></li>
+					<li class="sidebar__li"><a href="#">Подписки</a></li>
+					<li class="sidebar__li"><a href="#">Заметки</a></li>
+					<li class="sidebar__li"><a href="#">Игнор-лист</a></li>
+				</ul>
+			</nav>
+
+		</aside>
+		<script src="js/main.js"></script>
+	</div>
+</body>
+
+
+</html>
